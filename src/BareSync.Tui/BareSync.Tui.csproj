@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TargetFramework Condition="$([System.String]::Copy('$(NETCoreSdkVersion)').StartsWith('10.'))">net10.0</TargetFramework>
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Bare.Primitive.UI\src\Bare.Primitive.UI\Bare.Primitive.UI.csproj" />
+  </ItemGroup>
+
+</Project>

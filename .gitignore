@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Test results
+TestResults/
+
+# Local test artifacts
+Tests/.tmp_baresync_source/
+
+# Runtime output
+baresync_index.csv
